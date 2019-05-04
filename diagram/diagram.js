@@ -1,4 +1,3 @@
-
-$("a").on("click",function() {
-	alert("test ");
-});
+/*$(".element").on("click",function() {
+	$("#menu").fadeIn();
+});*/

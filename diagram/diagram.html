@@ -12,28 +12,25 @@
 		<div class="">
 			<h1>Menu parent children as a diagram...</h1>
 			<nav class="nav">
-						<ul>
-							<li class="element">
-								<a data-toggle="modal" href="#menu" class="btn btn-outline-info">Home</a>						
-							</li>
-						</ul>
-					</nav>
-			<div class="modal col-xl-12" id="">
-			  <div class="modal-dialog">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal">x</button>
-			        <h4 class="modal-title">Plus d'informations</h4>
-			      </div>
-			      <div class="modal-body">
-			        Le Tigre (Panthera tigris) est un mammifère carnivore de la famille des félidés...
-			      </div>
-			      <div class="modal-footer">
-			        <button class="btn btn-info" data-dismiss="modal">Fermer</button>
-			      </div>
-			    </div>
-			  </div>
-			</div>	
+					<ul>
+						<li class="element">
+							<a class="btn btn-outline-info" data-toggle="modal" href="#" >Home</a>	
+						</li>
+					</ul>
+
+				</nav>
+
+
+		<div class="btn-group"> 
+		  <!--button class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Action</button-->
+		  <ul id="menu1" class="dropdown-menu">
+		    <li id="droite"><a href="#">droite</a></li>
+		    <li id="gauche"><a href="#">gauche</a></li>
+		    <li id="fils"><a href="#">fils</a></li>
+		    <li class="divider"></li>
+		    <li id="close"><a href="#">X</a></li>
+		  </ul>
+		</div>				
 
 		<div class="container">
 			<div class="row">
@@ -41,13 +38,17 @@
 			  <div class="modal-dialog " role="document">
 			    <div class="modal-content">
 			      <div class="modal-header">
-			        <h5 class="modal-title">Modal title</h5>
+			        <h5 class="modal-title">Ajouter ..</h5>
 			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 			          <span aria-hidden="true">&times;</span>
 			        </button>
 			      </div>
 			      <div class="modal-body">
-			        <p>Modal body text goes here.</p>
+			      	<ul class="list-group">
+				        <li id="droite" class="list-group-item">droite</li>
+				        <li id="gauche" class="list-group-item">gauche</li>
+				        <li id="fils" class="list-group-item">fils</li>
+			        </ul>
 			      </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -65,7 +66,7 @@
 			      crossorigin="anonymous">
 			    </script>
 			<script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-			<script type="text/javascript" src="diagram.js"></script>
+			<script src="diagram.js"></script>
 		</div>	
 	</body>
 </html>
